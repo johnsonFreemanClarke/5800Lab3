@@ -32,5 +32,11 @@ public class MultiplicationTest {
 		MultiplicationTest test = new MultiplicationTest();
 		test.multiplyInts(-8, -9);
 	}
+	
+	@Test
+	public void multiplicationOfZero() {
+		MultiplicationTest test = new MultiplicationTest();
+		test.multiplyInts(-78928, 0);
+	}
 
 }
