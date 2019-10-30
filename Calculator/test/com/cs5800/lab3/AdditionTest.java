@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ExpressionTest {
+public class AdditionTest {
 	Display resultObject = new Display();
 	
 	public void printOperandsToConsole(Operand operand1, Operand operand2) {	
@@ -17,7 +17,7 @@ public class ExpressionTest {
 		Operand operand1 = new Operand(leftOperand);
 		Operand operand2 = new Operand(rightOperand);
 		Addition add = new Addition();
-		ExpressionTest test = new ExpressionTest();
+		AdditionTest test = new AdditionTest();
 		test.printOperandsToConsole(operand1, operand2);
 		int testResult = add.calculate(operand1, operand2);
 		resultObject.printResult(testResult);
@@ -25,20 +25,20 @@ public class ExpressionTest {
 
 	@Test 
 	public void addPositiveInts() {
-		ExpressionTest test = new ExpressionTest();
+		AdditionTest test = new AdditionTest();
 		test.addInts(67, 59);
 	}
 	
 	@Test
 	public void addPositiveAndNegativeInts() {
-		ExpressionTest test = new ExpressionTest();
+		AdditionTest test = new AdditionTest();
 		test.addInts(-12, 8);
 		test.addInts(60, -18);
 	}
 	
 	@Test 
 	public void addNegativeInts() {
-		ExpressionTest test = new ExpressionTest();
+		AdditionTest test = new AdditionTest();
 		test.addInts(-32, -8);
 		test.addInts(-16, -27);
 	}
