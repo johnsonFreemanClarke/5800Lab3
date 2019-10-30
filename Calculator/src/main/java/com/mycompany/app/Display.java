@@ -1,4 +1,4 @@
-package com.cs5800.lab3;
+package main.java.com.mycompany.app;
 
 public class Display {
 	public void printResult(int result) {

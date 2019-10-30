@@ -1,9 +1,9 @@
-package com.cs5800.lab3;
+package main.java.com.mycompany.app;
 
 public class Operand {
 	private int operand;
 	
-	Operand(int operand){
+	public Operand(int operand){
 		this.operand = operand;
 	}
 	

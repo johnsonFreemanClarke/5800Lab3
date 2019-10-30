@@ -1,4 +1,4 @@
-package com.cs5800.lab3;
+package main.java.com.mycompany.app;
 
 public class Division extends Expression{
 	public int calculate(Operand operand1, Operand operand2) {

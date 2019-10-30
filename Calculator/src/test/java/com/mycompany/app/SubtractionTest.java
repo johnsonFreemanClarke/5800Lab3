@@ -1,8 +1,12 @@
-package com.cs5800.lab3;
+package test.java.com.mycompany.app;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import main.java.com.mycompany.app.Display;
+import main.java.com.mycompany.app.Operand;
+import main.java.com.mycompany.app.Subtraction;
 
 public class SubtractionTest {
 	Display resultObject = new Display();

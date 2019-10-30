@@ -1,9 +1,13 @@
-package com.cs5800.lab3;
+package test.java.com.mycompany.app;
 
 import java.util.Random;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import main.java.com.mycompany.app.Addition;
+import main.java.com.mycompany.app.Display;
+import main.java.com.mycompany.app.Operand;
 
 public class AdditionTest {
 	Display resultObject = new Display();
