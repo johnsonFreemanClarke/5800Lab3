@@ -27,17 +27,21 @@ public class ExpressionTest {
 	public void addPositiveInts() {
 		ExpressionTest test = new ExpressionTest();
 		test.addInts(67, 59);
-		fail();
 	}
 	
 	@Test
 	public void addPositiveAndNegativeInts() {
 		ExpressionTest test = new ExpressionTest();
 		test.addInts(-12, 8);
-		System.out.println("");
 		test.addInts(60, -18);
 	}
 	
+	@Test 
+	public void addNegativeInts() {
+		ExpressionTest test = new ExpressionTest();
+		test.addInts(-32, -8);
+		test.addInts(-16, -27);
+	}
 	
 
 }
