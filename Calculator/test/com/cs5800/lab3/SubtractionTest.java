@@ -27,4 +27,10 @@ public class SubtractionTest {
 		SubtractionTest test = new SubtractionTest();
 		test.subtractInts(5, 23);
 	}
+	
+	@Test
+	public void subtractNegativeints() {
+		SubtractionTest test = new SubtractionTest();
+		test.subtractInts(-87, -43);
+	}
 }
