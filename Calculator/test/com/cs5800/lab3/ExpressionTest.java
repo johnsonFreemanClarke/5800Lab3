@@ -1,5 +1,6 @@
 package com.cs5800.lab3;
 
+import java.util.Random;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -12,15 +13,31 @@ public class ExpressionTest {
 		System.out.println("operand2 = " + operand2.getOperand());
 	}
 	
-	@Test
-	public void addTwoPositiveInts() {
-		Operand operand1 = new Operand(5);
-		Operand operand2 = new Operand(7);
+	public void addInts(int leftOperand, int rightOperand) {
+		Operand operand1 = new Operand(leftOperand);
+		Operand operand2 = new Operand(rightOperand);
 		Addition add = new Addition();
 		ExpressionTest test = new ExpressionTest();
 		test.printOperandsToConsole(operand1, operand2);
 		int testResult = add.calculate(operand1, operand2);
 		resultObject.printResult(testResult);
 	}
+
+	@Test 
+	public void addPositiveInts() {
+		ExpressionTest test = new ExpressionTest();
+		test.addInts(67, 59);
+		fail();
+	}
+	
+	@Test
+	public void addPositiveAndNegativeInts() {
+		ExpressionTest test = new ExpressionTest();
+		test.addInts(-12, 8);
+		System.out.println("");
+		test.addInts(60, -18);
+	}
+	
+	
 
 }
